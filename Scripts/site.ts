@@ -1,8 +1,11 @@
+///<reference path="moment.d.ts" />
 ///<reference path='jquery.d.ts' />
+
 interface Window extends ViewCSS, MSEventAttachmentTarget, MSWindowExtensions, WindowPerformance, ScreenView, EventTarget, WindowLocalStorage, WindowSessionStorage, WindowTimers {
     prettyPrint: () => void;
 }
 
-$(function(){
+$(function() {
     window.prettyPrint && window.prettyPrint();
+    //moment.lang('es');
 });
